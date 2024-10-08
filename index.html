@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11</title>
+</head>
+
+<body>
+        <script>
+/* tudo em minusculo
+objeto metodo */
+
+            window.alert ("PERIGO!");
+            alert ("Atividade suspeita identificada no site.");
+            document.write ("Boa noite, usuário.");
+            window.confirm ("Deseja confirmar a informação digitada abaixo?");
+            window.prompt ("Digite seu nome");
+
+ /* variavel no javascript nao é tipado, ou seja,
+não preciso definir o tipo do variavel */
+
+            var n;
+            n=10;
+            alert ("Resultado:  "+n);
+            n="nome";
+            alert ("Resultado:  "+n);
+            n=17.62;
+            alert ("Resultado:  "+n);
+
+/* vamos entrar com dois numeros e multiplica-los */
+
+            var n1, n2, total
+            n1=prompt("Digite o primeiro número:  ");
+            n2=prompt("Digite o segundo número:  ");
+            total = n1 * n2;
+            alert("Total:  "+ total);
+
+/* somar utilizando
+com parseint */
+/* o objeto do parseint é o numver 
+
+            var n1, n2, total
+            n1=prompt("Digite o primeiro número:  ");
+            n1=Number.parseInt(n1);
+            n2=prompt("Digite o segundo número:  ");
+            n2=parseInt(n2);
+            total = n1 + n2;
+            alert("Total:  "+ total);
+   */         
+/* EXERCICIO 1: Dado 3 numeros , calcule a média */
+
+            var n1, n2, n3, media
+            n1=prompt("Digite o primeiro número:  ");
+            n1=Number.parseFloat(n1);
+            n2=prompt("Digite o segundo número:  ");
+            n2=Number.parseFloat(n2);
+            n3=prompt("Digite o terceiro número:  ");
+            n3=Number.parseFloat(n3);
+            media  = (n1+n2+n3)/3;
+            alert("Media:  "+ media);
+
+ // Trabalho com literalstring
+ // inicia-se com crase (shift + teclado do lado da letra P)
+ // a variavel deve ser ${nome da variavel}
+
+            alert(`A média de ${n1} cpm ${n2} com ${n3} e igual a ${media}`);
+
+// vamos trabalhar com variavel string
+
+            var nome;
+            nome = prompt ("Digite o seu nome: ");
+            document.write(nome+'<br>');
+            document.write(nome.toUpperCase( )+'<br>');
+            document.write(nome.toLowerCase( )+'<br>');
+            document.write("Nome tem: "+ nome.length + "caracteres"); 
+
+//Dado um numero, exiba se é positivo ou negativo
+//Trabalho com if()
+
+
+        </script>
+    
+</body>
+
+</html>
